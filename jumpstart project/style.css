@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #be2c49, #392f20, #be2c49, #392f20);
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.card {
+  width: 350px;
+  height: 515px;
+  margin: 1px auto;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-image: url(https://www.rd.com/wp-content/uploads/2020/04/GettyImages-1142330016-1024x683.jpg);
+  background-position: center;
+  color: #fff;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  line-height: 1;
+}
+
+a {
+  width: 120px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+#headshot {
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+button {
+  padding: 2px 2px;
+  width: 70%;
+  height: 30px;
+  margin: 0 auto;
+}
+
+button:hover {
+  opacity: 0;
+  color: transparent;
+}
+
+.hide {
+  display: block;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.hide a {
+  font-size: 22px;
+  color: #fff;
+  padding: 22px;
+}
+
+.content h3 {
+  color: #be2c49;
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
